@@ -1,0 +1,277 @@
+/*****************************************
+GENERAL
+******************************************/
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Allan', cursive;
+	font-size: 1.5em;
+}
+.clearfix::afer {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/****************************************
+HEADER
+****************************************/
+#logo {
+	text-align: center;
+}
+.main-header {
+	background-color : white;
+	margin:0 0 3px 0;
+	padding:5px 0 0 0;
+	overflow: auto;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0px 3px 2px rgba(0,0,0,0.4)
+}
+
+h1 {
+	color: #800000;
+	font-family: 'Bangers', cursive;
+	margin: 8px 0 0 8px;
+	font-size: 1.8em;
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);	
+}
+h2 {
+	color: #800000;
+	font-family: 'Bangers', cursive;
+	margin:8px 0 0 8px;
+	font-size: 0.9em;	
+}
+
+
+/****************************************
+NAV
+****************************************/
+nav {
+	text-align:center;
+	padding:5px 0 5px 0;
+}
+
+nav a {
+	color: #800000;
+	font-weight: bold;
+	padding: 0 5px;
+	transition:all 1s;
+}
+nav ul {
+	list-style: none;
+	margin: 5px 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a:hover {
+	color: #008080;
+}
+
+nav a.selected {
+	color: #008080;
+}
+
+/****************************************
+BANNER
+****************************************/
+.banner {
+	text-align: center;
+	padding: 400px 0 30px 0;
+	background: linear-gradient(180deg,transparent,#000000),
+				url(../img/foto1.jpg) no-repeat center / cover;
+				background-attachment: fixed;
+
+}
+
+.banner p{
+	font-size: 1.4em;
+	font-family: 'Bangers', cursive;
+	color:#ffffff;
+
+}
+
+.arrow {
+	width: 40px;
+}
+
+
+/****************************************
+SECTION
+****************************************/
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 40px 5% 40px 5%;
+	box-sizing: border-box;
+}
+
+#gallery {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+#gallery li {
+	float:left;
+	width: 45%;
+	margin: 2.5%;
+	background-color:#bfbfbf;
+	position: relative;
+	z-index: 2;
+	transition: 0.2;
+	
+}
+
+#gallery li:hover {
+	box-shadow: 0px 4px 8px 8px rgba(0,0,0,0.4);
+}
+
+#gallery li a p {
+	font-size: 0.85em;
+	color: #000000;
+	padding: 5%;
+	margin: 0;
+}
+
+.sales {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	width: 50px;
+}
+/********************************************
+FOOTER
+********************************************/
+
+.main-footer{
+	text-align: center;
+	clear: both;
+	padding: 40px;
+	background-color: #800000;
+}
+
+.main-footer p{
+	color: #008080;
+}
+
+footer p{
+	font-size: 0.85em
+}
+
+/*********************************************
+SOCIAL MEDIA
+**********************************************/
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 30%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #999999;
+  color: white;
+}
+
+.fa-twitter {
+  background: #999999;
+  color: white;
+ }
+
+ .fa-linkedin {
+  background: #999999;
+  color: white;
+}
+
+/********************************************
+ABOUT
+********************************************/
+.container {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 5)),
+				url(../img/foto2.jpg) no-repeat center / cover;
+				background-attachment: fixed;
+
+	padding: 70px 0 50px 0;
+	text-align: center;
+	clear: both;
+}
+
+.foto-profilo{
+	display:block;
+	max-width: 200px;
+	margin: 0 auto 40px;
+	border-radius: 100%;
+}
+#wrapper section {
+	padding-top: 20px;
+}
+
+.container h3 {
+	color: #ffffff;
+}
+.container p {
+	color: #ffffff;
+}
+/********************************************
+CONTACT 
+********************************************/
+ #contact-info {
+ 	list-style: none;
+ 	padding: 0;
+ 	margin: 0;
+ }
+
+ #contact-info a{
+ 	color: #0000000;
+ 	display: block;
+ 	min-height: 30px;
+ 	background-repeat: no-repeat;
+ 	background-size: 30px 30px;
+ 	padding: 0 0 0 30px;
+ }
+
+ #contact-info li.phone a {
+ 	background-image: url(../img/icona-telefono.png);
+
+ }
+
+ #contact-info li.mail a {
+ 	background-image: url(../img/icona-mail.png);
+
+ }
+
+ #contact-info li.twitter a {
+ 	background-image: url(../img/icona-twitter.png);
+
+ }
